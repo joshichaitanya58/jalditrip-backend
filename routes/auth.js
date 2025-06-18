@@ -27,3 +27,10 @@ router.post('/login', async (req, res) => {
 });
 
 module.exports = router;
+
+
+
+router.post('/signup', async (req, res) => {
+  const { name, email, password } = req.body;
+  // ... hashing + save to DB
+});
